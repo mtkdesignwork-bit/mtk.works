@@ -722,8 +722,9 @@ button {
     min-height: 520px;
   }
 
+  /* 縦長の画面でもチューリップが2本とも収まる位置 */
   .fv__img {
-    background-position: 70% center;
+    background-position: 63% center;
   }
 
   .fv::after {
