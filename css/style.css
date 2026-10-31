@@ -344,9 +344,21 @@ button {
 }
 
 @media (hover: hover) {
-  .work__img:hover img {
+  .work__img img:hover {
     transform: scale(1.02);
   }
+}
+
+/* FVの下に、ほかのセクションを小さく2枚並べる */
+.work__sub {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.work__sub img {
+  box-shadow: 0 8px 20px rgba(94, 82, 82, 0.1);
 }
 
 .work__title {
