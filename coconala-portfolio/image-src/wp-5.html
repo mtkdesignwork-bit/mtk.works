@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+
+.top-title { position:absolute; left:0; top:140px; width:1220px; text-align:center; }
+.top-title .eyebrow { display:block; margin-bottom:14px; }
+
+/* WordPressの投稿画面の見本（実際の画面ではなく図） */
+.admin { position:absolute; left:520px; top:330px; width:630px; padding:0; overflow:hidden; }
+.admin .head { padding:18px 26px; background:#23282d; color:#fff; font-size:22px; letter-spacing:0.08em; }
+.admin .row { padding:14px 26px; border-bottom:1px solid #eee; }
+.admin .row label { display:block; font-size:19px; color:var(--ink-soft); margin-bottom:8px; }
+.admin .input { display:block; padding:12px 16px; border:1px solid #ccc; border-radius:8px; font-size:21px; color:var(--ink); background:#fff; }
+.admin .area { height:90px; line-height:1.6; }
+.admin .btnrow { padding:14px 26px; text-align:right; }
+.admin .pub { display:inline-block; padding:10px 28px; border-radius:8px; background:var(--gold); color:#fff; font-size:21px; }
+.link { position:absolute; left:440px; top:455px; width:80px; height:4px; background:var(--gold); }
+.link::before { content:""; position:absolute; left:-10px; top:-8px; width:20px; height:20px; border-radius:50%; background:var(--gold); }
+.list { position:absolute; left:520px; top:775px; width:630px; display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.list div { display:flex; align-items:center; gap:14px; padding:18px 22px; font-size:24px; }
+.list .icon { flex:none; width:42px; height:42px; }
+.cost { position:absolute; left:520px; top:955px; width:630px; padding:20px 26px; font-size:21px; line-height:1.7; border:2px solid var(--gold-light); border-radius:18px; background:rgba(251,248,244,0.75); }
+.cost b { font-family:var(--mincho); font-size:24px; color:var(--gold); display:block; }
+
+</style></head>
+<body>
+
+<div class="top-title"><span class="eyebrow">EDIT</span><h2 class="h2">公開後も、自分で更新できます</h2><div class="rule"></div></div>
+<div class="phone" style="left:90px;top:320px;width:340px;z-index:1"><div class="notch"></div><div class="screen" style="width:312px;height:675px"><iframe src="preview/nagi-news.html" width="390" height="844" scrolling="no" style="transform:translateY(0.0px) scale(0.8)"></iframe></div></div>
+<div class="link"></div>
+<div class="admin card">
+  <div class="head">新規投稿（WordPressの管理画面）</div>
+  <div class="row"><label>タイトル</label><span class="input">新作のお知らせ</span></div>
+  <div class="row"><label>本文</label><span class="input area">12月に新しい作品を発売します。</span></div>
+  <div class="btnrow"><span class="pub">公開</span></div>
+</div>
+<div class="list">
+  <div class="card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><path d="M6 20v8h7l15 9V11l-15 9z"/><path d="M34 18c2 1.5 3 3.5 3 6s-1 4.5-3 6M13 28l3 11h5l-3-11"/></svg><span>お知らせの投稿</span></div>
+  <div class="card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><path d="M10 38l3-10 20-20 7 7-20 20z"/><path d="M29 12l7 7"/></svg><span>文章の変更</span></div>
+  <div class="card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><rect x="5" y="9" width="38" height="30" rx="3"/><circle cx="16" cy="19" r="4"/><path d="M5 34l11-10 9 8 6-5 12 9"/></svg><span>写真の変更</span></div>
+  <div class="card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 15v18M15 24h18"/></svg><span>記事の追加</span></div>
+</div>
+<div class="cost"><b>かかる費用</b>サーバー代 月1,000円前後<br>ドメイン代 年1,500〜2,000円ほど</div>
+
+</body></html>

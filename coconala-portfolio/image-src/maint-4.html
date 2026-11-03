@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+
+.top-title { position:absolute; left:0; top:140px; width:1220px; text-align:center; }
+.top-title .eyebrow { display:block; margin-bottom:14px; }
+
+.price { position:absolute; left:110px; width:1000px; padding:44px 60px; text-align:center; }
+.price .label { font-family:var(--mincho); font-size:30px; color:var(--ink-soft); letter-spacing:0.1em; }
+.price .yen { font-family:var(--mincho); font-weight:600; font-size:110px; line-height:1.15; letter-spacing:0.02em; }
+.price .yen span { font-size:46px; margin-left:6px; }
+.price .chips { display:flex; justify-content:center; gap:16px; margin-top:12px; }
+.price .chips span { padding:10px 26px; border-radius:999px; background:var(--mint-soft); color:#2f7d6d; font-size:24px; font-weight:600; }
+.options { position:absolute; left:110px; width:1000px; padding:34px 60px; }
+.options h3 { font-family:var(--mincho); font-size:30px; font-weight:600; margin-bottom:12px; display:flex; align-items:center; gap:14px; }
+.options h3::before { content:""; width:8px; height:30px; background:var(--gold); border-radius:4px; }
+.options li { list-style:none; display:flex; align-items:baseline; gap:14px; padding:16px 0; border-bottom:1px dashed var(--line); font-size:27px; }
+.options li:last-child { border-bottom:0; }
+.options li .dots { flex:1; }
+.options li b { font-family:var(--mincho); font-size:32px; font-weight:600; color:var(--gold); }
+.options li small { display:block; font-size:19px; color:var(--ink-soft); margin-top:4px; }
+
+.price { display:flex; align-items:center; justify-content:center; gap:30px; padding:30px 40px; }
+.price .label { white-space:nowrap; }
+.safe-list { position:absolute; left:110px; top:560px; width:1000px; display:flex; flex-direction:column; gap:18px; }
+.safe-item { display:flex; align-items:center; gap:24px; padding:24px 34px; }
+.safe-item .icon { flex:none; width:60px; height:60px; }
+.safe-item b { display:block; font-family:var(--mincho); font-size:29px; font-weight:600; line-height:1.4; }
+.safe-item small { display:block; margin-top:4px; font-size:22px; color:var(--ink-soft); line-height:1.5; }
+
+</style></head>
+<body>
+
+<div class="top-title"><span class="eyebrow">PRICE</span><h2 class="h2">料金と安心の仕組み</h2><div class="rule"></div></div>
+<div class="price card" style="top:320px"><div class="label">月額</div><div class="yen">3,500<span>円</span></div><div class="chips" style="flex-direction:column;margin-top:0"><span>定期購入</span></div></div>
+<div class="safe-list">
+  <div class="safe-item card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><circle cx="15" cy="24" r="8"/><path d="M23 24h19M36 24v7M42 24v5"/></svg><div><b>お客様のパスワードはお預かりしません</b><small>保守用のアカウントを作って作業します</small></div></div>
+  <div class="safe-item card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M15 24l6 6 12-12"/></svg><div><b>解約は定期購入を止めるだけ</b><small>サイトはそのまま残ります</small></div></div>
+  <div class="safe-item card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><path d="M10 4h20l8 8v32H10z"/><path d="M30 4v8h8"/><path d="M17 26l5 5 9-10"/></svg><div><b>私が制作したWordPressサイトが対象です</b><small>サイトの作りがわかっているので、更新で不具合が出ても直せます</small></div></div>
+</div>
+
+</body></html>

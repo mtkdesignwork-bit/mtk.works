@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+  /* 元のアイキャッチ（1140×1380）の下半分（端末と台）を使い、上の文字はHTMLで組み直す */
+  .wall {
+    position: absolute; left: -40px; top: -40px; width: 1300px; height: 560px;
+    background: url("../商品アイキャッチ.png") 0 -646px / 1300px auto no-repeat;
+    transform: scaleY(30); transform-origin: 0 40px;
+    filter: blur(18px);
+  }
+  .wall-shade { position: absolute; inset: 0 0 auto 0; height: 520px;
+    background: linear-gradient(180deg, rgba(243,236,228,0.55), rgba(243,236,228,0.15)); }
+  .scene {
+    position: absolute; left: 0; top: 475px; width: 1220px; height: 765px;
+    background: url("../商品アイキャッチ.png") 0 -685px / 1220px auto no-repeat;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 70px);
+  }
+  .script { position: absolute; left: 70px; top: 122px; font-size: 56px; transform: rotate(-6deg); }
+  .title { position: absolute; left: 70px; top: 176px; font-size: 72px; line-height: 1.28; }
+  .sub { position: absolute; left: 740px; top: 190px; padding-left: 34px; border-left: 2px solid var(--ink-soft);
+    font-size: 27px; line-height: 1.9; }
+  .badges { position: absolute; top: 368px; left: 0; width: 1220px; display: flex; justify-content: center; gap: 38px; }
+  .badges .badge { width: 172px; height: 172px; font-size: 25px; }
+  .badges .badge svg { width: 40px; height: 40px; margin-bottom: 4px; }
+
+  /* 端末の画面だけ、今のサイトに差し替える（写真の端末の位置に合わせて重ねる） */
+  .pc-screen { position: absolute; left: 156px; top: 521px; width: 837px; height: 496px; overflow: hidden; background: #e8e2da; }
+  .pc-screen iframe { border: 0; width: 1440px; height: 853px; transform: scale(0.58125); transform-origin: 0 0; display: block; }
+  .phone-body { position: absolute; left: 0; top: 475px; width: 1220px; height: 765px;
+    background: url("../商品アイキャッチ.png") 0 -685px / 1220px auto no-repeat;
+    clip-path: inset(168px 66px 84px 907px round 50px); }
+  .sp-screen { position: absolute; left: 918px; top: 654px; width: 226px; height: 490px; overflow: hidden; border-radius: 34px; background: #e8e2da; }
+  .sp-screen iframe { border: 0; width: 390px; height: 846px; transform: scale(0.5795); transform-origin: 0 0; display: block; }
+  .sp-notch { position: absolute; left: 997px; top: 661px; width: 66px; height: 20px; border-radius: 12px; background: #141313; }
+</style></head>
+<body>
+  <div class="wall"></div>
+  <div class="wall-shade"></div>
+  <div class="scene"></div>
+  <div class="pc-screen"><iframe src="preview/nail-3.html" scrolling="no"></iframe></div>
+  <div class="phone-body"></div>
+  <div class="sp-screen"><iframe src="preview/nail-1.html" scrolling="no"></iframe></div>
+  <div class="sp-notch"></div>
+  <div class="script">Web Design</div>
+  <h1 class="h1 title"><span class="gold-text">購入につなげる</span><br>ホームページ制作</h1>
+  <p class="lead sub">作家さん・小さなブランドの、<br>1ページのホームページ。<br>魅力を伝えて、ショップへ。</p>
+  <div class="badges">
+    <div class="badge"><svg class="icon" viewBox="0 0 48 48"><path d="M14 6l10 15 10-15M24 21v21M15 26h18M15 33h18"/></svg>保守費用<br>毎月0円</div>
+    <div class="badge"><svg class="icon" viewBox="0 0 48 48"><path d="M10 38l4-12 20-20 8 8-20 20z"/><path d="M30 10l8 8"/></svg>修正回数<br>3回</div>
+    <div class="badge"><svg class="icon" viewBox="0 0 48 48"><rect x="14" y="5" width="20" height="38" rx="4"/><path d="M21 37h6"/></svg>スマホ<br>対応</div>
+  </div>
+</body></html>

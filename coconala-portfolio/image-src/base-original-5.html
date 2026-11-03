@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+
+.top-title { position:absolute; left:0; top:140px; width:1220px; text-align:center; }
+.top-title .eyebrow { display:block; margin-bottom:14px; }
+
+/* BASEの「デザイン」画面の見本（実際の画面ではなく図） */
+.admin { position:absolute; left:520px; top:330px; width:630px; padding:0; overflow:hidden; }
+.admin .head { padding:18px 26px; background:#3b3b3b; color:#fff; font-size:22px; letter-spacing:0.08em; }
+.admin .row { padding:14px 26px; border-bottom:1px solid #eee; }
+.admin .row label { display:block; font-size:19px; color:var(--ink-soft); margin-bottom:8px; }
+.admin .field { display:flex; align-items:center; gap:14px; }
+.admin .img { width:110px; height:70px; border-radius:8px; background:url('file:///Users/mituki.o/Desktop/mellow/images/fv-photo.jpg') center/cover; }
+.admin .btn { padding:8px 18px; border:1px solid #ccc; border-radius:8px; font-size:19px; color:#555; }
+.admin .input { flex:1; padding:12px 16px; border:1px solid #ccc; border-radius:8px; font-size:21px; color:var(--ink); background:#fff; }
+.admin .hl { outline:4px solid var(--gold); outline-offset:-4px; border-radius:8px; }
+.link { position:absolute; left:440px; top:455px; width:80px; height:4px; background:var(--gold); }
+.link::before { content:""; position:absolute; left:-10px; top:-8px; width:20px; height:20px; border-radius:50%; background:var(--gold); }
+.list { position:absolute; left:520px; top:792px; width:630px; display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.list div { display:flex; align-items:center; gap:14px; padding:20px 22px; font-size:24px; line-height:1.4; }
+.list .icon { flex:none; width:42px; height:42px; }
+.foot { position:absolute; left:520px; top:1058px; width:630px; text-align:center; font-family:var(--mincho); font-weight:600; font-size:30px; color:var(--gold); }
+
+</style></head>
+<body>
+
+<div class="top-title"><span class="eyebrow">EDIT</span><h2 class="h2">公開後も、自分で変えられます</h2><div class="rule"></div></div>
+<div class="phone" style="left:90px;top:320px;width:340px;z-index:1"><div class="notch"></div><div class="screen" style="width:312px;height:675px"><iframe src="preview/index.html" width="390" height="844" scrolling="no" style="transform:translateY(0.0px) scale(0.8)"></iframe></div></div>
+<div class="link"></div>
+<div class="admin card">
+  <div class="head">デザイン（BASEの管理画面）</div>
+  <div class="row hl"><label>トップのメイン写真</label><div class="field"><div class="img"></div><span class="btn">画像を変更</span></div></div>
+  <div class="row"><label>キャッチコピー</label><div class="field"><span class="input">今日をまるく、やわらかく。</span></div></div>
+  <div class="row"><label>お知らせ</label><div class="field"><span class="input">新作のマグを12月に発売します</span></div></div>
+</div>
+<div class="list">
+  <div class="card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><rect x="5" y="9" width="38" height="30" rx="3"/><circle cx="16" cy="19" r="4"/><path d="M5 34l11-10 9 8 6-5 12 9"/></svg><span>トップの写真と<br>キャッチコピー</span></div>
+  <div class="card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><path d="M6 20v8h7l15 9V11l-15 9z"/><path d="M34 18c2 1.5 3 3.5 3 6s-1 4.5-3 6M13 28l3 11h5l-3-11"/></svg><span>お知らせ</span></div>
+  <div class="card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="16" r="8"/><path d="M8 42c2-9 8-13 16-13s14 4 16 13"/></svg><span>作家紹介の<br>写真と文章</span></div>
+  <div class="card"><svg class="icon" width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 15v18M15 24h18"/></svg><span>商品の追加</span></div>
+</div>
+<div class="foot">BASEの「デザイン」画面から、いつでも</div>
+
+</body></html>

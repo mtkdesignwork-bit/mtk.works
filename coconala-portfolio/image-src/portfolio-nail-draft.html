@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<style>
+  /* ポートフォリオ用（1448×1086）。写真はそのままで、端末の画面だけ今のサイトに差し替える */
+  * { margin: 0; padding: 0; }
+  html, body { width: 1448px; height: 1086px; overflow: hidden; }
+  .scene, .phone-body { position: absolute; inset: 0; background: url("nail-mockup-base.png") 0 0 / 1448px 1086px no-repeat; }
+  .phone-body { clip-path: inset(333px 67px 144px 1087px round 58px); }
+  .pc-screen { position: absolute; left: 191px; top: 191px; width: 977px; height: 588px; overflow: hidden; background: #e8e2da; }
+  .pc-screen iframe { border: 0; width: 1440px; height: 867px; transform: scale(0.6785); transform-origin: 0 0; display: block; }
+  .sp-screen { position: absolute; left: 1097px; top: 344px; width: 273px; height: 587px; overflow: hidden; border-radius: 42px; background: #e8e2da; }
+  .sp-screen iframe { border: 0; width: 390px; height: 839px; transform: scale(0.7); transform-origin: 0 0; display: block; }
+  .sp-notch { position: absolute; left: 1194px; top: 352px; width: 80px; height: 25px; border-radius: 14px; background: #141313; }
+</style></head>
+<body>
+  <div class="scene"></div>
+  <div class="pc-screen"><iframe src="preview/nail-3.html" scrolling="no"></iframe></div>
+  <div class="phone-body"></div>
+  <div class="sp-screen"><iframe src="preview/nail-1.html" scrolling="no"></iframe></div>
+  <div class="sp-notch"></div>
+</body></html>

@@ -1,0 +1,38 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mellow",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-I",
+        "-c",
+        "import functools, http.server; handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory='/private/tmp/claude-501/-Users-mituki-o-Desktop-mtk-works/a9c4f38c-c062-4e58-ada7-23b301f12b9a/scratchpad/site'); http.server.ThreadingHTTPServer(('127.0.0.1', 5188), handler).serve_forever()"
+      ],
+      "port": 5188,
+      "autoPort": false
+    },
+    {
+      "name": "mellow-base",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-I",
+        "-c",
+        "import functools, http.server; handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory='/private/tmp/claude-501/-Users-mituki-o-Desktop-mtk-works/4c358d9a-622e-4051-8bfa-4204919753f4/scratchpad/mellow-site'); http.server.ThreadingHTTPServer(('127.0.0.1', 5189), handler).serve_forever()"
+      ],
+      "port": 5189,
+      "autoPort": false
+    },
+    {
+      "name": "nailtip2",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-I",
+        "-c",
+        "import functools, http.server; handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory='/private/tmp/claude-501/-Users-mituki-o-Desktop-mtk-works/beb7becd-ec47-4dd2-b798-97474a4afd7a/scratchpad/nailtip2-site'); http.server.ThreadingHTTPServer(('127.0.0.1', 5190), handler).serve_forever()"
+      ],
+      "port": 5190,
+      "autoPort": false
+    }
+  ]
+}
