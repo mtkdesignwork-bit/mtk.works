@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>作品一覧｜mtk.works</title>
+  <meta name="description" content="mtk.works の制作実績一覧です。LP・Webサイト・バナーの作品をご紹介します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="is-sub">
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header">
+    <a href="../index.html" class="header__logo">mtk.works</a>
+    <button class="header__toggle" type="button" aria-controls="global-nav" aria-expanded="false">
+      <span class="header__toggle-bar"></span>
+      <span class="visually-hidden">メニューを開く</span>
+    </button>
+    <nav class="nav" id="global-nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list">
+        <li><a href="../index.html">TOP</a></li>
+        <li><a href="../index.html#about">ABOUT</a></li>
+        <li><a href="../index.html#strength">STRENGTH</a></li>
+        <li><a href="../works/index.html">WORKS</a></li>
+        <li><a href="../index.html#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="sub">
+    <div class="sub__inner">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol><li><a href="../index.html">TOP</a></li><li aria-current="page">Works</li></ol>
+      </nav>
+      <h1 class="heading heading--center js-fade"><span class="heading__en">Works</span><span class="heading__jp">制作物</span></h1>
+
+      <!-- 種類で絞り込むボタン（JavaScriptが動くときだけ表示） -->
+      <div class="filter" role="group" aria-label="作品の種類で絞り込む">
+        <button class="filter__btn" type="button" data-filter="all" aria-pressed="true">すべて</button>
+        <button class="filter__btn" type="button" data-filter="lp" aria-pressed="false">LP</button>
+        <button class="filter__btn" type="button" data-filter="web" aria-pressed="false">Webサイト</button>
+        <button class="filter__btn" type="button" data-filter="banner" aria-pressed="false">バナー</button>
+      </div>
+
+      <ul class="cards cards--list">
+          <li class="card js-fade" data-cat="lp">
+            <a href="../works/mellow.html">
+              <figure class="card__img"><img src="../images/mock-mellow.jpg" alt="陶芸ブランド mellow ランディングページのファーストビュー。パソコンとスマホの画面" width="1448" height="1086" loading="lazy"></figure>
+              <p class="card__cat">LP</p>
+              <h2 class="card__title">mellow</h2>
+            </a>
+          </li>
+          <li class="card js-fade" data-cat="lp">
+            <a href="../works/quiet-quirk.html">
+              <figure class="card__img"><img src="../images/mock-nail.jpg" alt="ネイルチップブランド Quiet Quirk ランディングページのファーストビュー。パソコンとスマホの画面" width="1448" height="1086" loading="lazy"></figure>
+              <p class="card__cat">LP</p>
+              <h2 class="card__title">Quiet Quirk</h2>
+            </a>
+          </li>
+          <li class="card js-fade" data-cat="lp">
+            <a href="../works/cafe-bloom.html">
+              <figure class="card__img"><img src="../images/mock-cafe.jpg" alt="カフェ Café Bloom ランディングページのファーストビュー。パソコンとスマホの画面" width="1448" height="1086" loading="lazy"></figure>
+              <p class="card__cat">LP</p>
+              <h2 class="card__title">Café Bloom</h2>
+            </a>
+          </li>
+          <li class="card js-fade" data-cat="web">
+            <a href="../works/nagi.html">
+              <figure class="card__img"><img src="../images/mock-nagi.jpg" alt="宿ブランド NAGI 公式サイトのファーストビュー。パソコンとスマホの画面" width="1448" height="1086" loading="lazy"></figure>
+              <p class="card__cat">Webサイト</p>
+              <h2 class="card__title">NAGI（凪）</h2>
+            </a>
+          </li>
+          <li class="card js-fade" data-cat="lp">
+            <a href="../works/nexlead.html">
+              <figure class="card__img"><img src="../images/mock-nexlead.jpg" alt="研修サービス NEXLEAD ランディングページのファーストビュー。パソコンとスマホの画面" width="1448" height="1086" loading="lazy"></figure>
+              <p class="card__cat">LP</p>
+              <h2 class="card__title">NEXLEAD</h2>
+            </a>
+          </li>
+          <li class="card js-fade" data-cat="lp">
+            <a href="../works/lumiere.html">
+              <figure class="card__img"><img src="../images/mock-lumiere.jpg" alt="美容液 LUMIÈRE SERUM ランディングページのファーストビュー。パソコンとスマホの画面" width="1448" height="1086" loading="lazy"></figure>
+              <p class="card__cat">LP</p>
+              <h2 class="card__title">LUMIÈRE SERUM</h2>
+            </a>
+          </li>
+          <li class="card js-fade" data-cat="web">
+            <a href="../works/midorinooka-dental.html">
+              <figure class="card__img"><img src="../images/mock-dental.jpg" alt="みどりの丘歯科クリニック コーポレートサイトのファーストビュー。パソコンとスマホの画面" width="1448" height="1086" loading="lazy"></figure>
+              <p class="card__cat">Webサイト</p>
+              <h2 class="card__title">みどりの丘歯科クリニック</h2>
+            </a>
+          </li>
+          <li class="card js-fade" data-cat="web">
+            <a href="../works/towa.html">
+              <figure class="card__img"><img src="../images/mock-towa.jpg" alt="東和建設株式会社 コーポレートサイトのファーストビュー。パソコンとスマホの画面" width="1448" height="1086" loading="lazy"></figure>
+              <p class="card__cat">Webサイト</p>
+              <h2 class="card__title">東和建設</h2>
+            </a>
+          </li>
+          <li class="card card--banner js-fade" data-cat="banner">
+            <a href="../works/banner-beauty.html">
+              <figure class="card__img"><img src="../images/banner-beauty.jpg" alt="美容クリニック 全身脱毛キャンペーンバナー" width="1200" height="1200" loading="lazy"></figure>
+              <p class="card__cat">バナー</p>
+              <h2 class="card__title">美容クリニック</h2>
+            </a>
+          </li>
+          <li class="card card--banner js-fade" data-cat="banner">
+            <a href="../works/banner-pancake.html">
+              <figure class="card__img"><img src="../images/banner-pancake.jpg" alt="白桃ミルクパンケーキ 季節限定メニュー告知バナー" width="1400" height="995" loading="lazy"></figure>
+              <p class="card__cat">バナー</p>
+              <h2 class="card__title">白桃ミルクパンケーキ</h2>
+            </a>
+          </li>
+          <li class="card card--banner js-fade" data-cat="banner">
+            <a href="../works/banner-peach-tea.html">
+              <figure class="card__img"><img src="../images/banner-peach-tea.jpg" alt="白桃スパークリングティー 新商品告知バナー" width="1200" height="1200" loading="lazy"></figure>
+              <p class="card__cat">バナー</p>
+              <h2 class="card__title">白桃スパークリングティー</h2>
+            </a>
+          </li>
+          <li class="card card--banner js-fade" data-cat="banner">
+            <a href="../works/banner-ai.html">
+              <figure class="card__img"><img src="../images/banner-ai.jpg" alt="企業向けAI活用セミナー 告知バナー" width="1080" height="1080" loading="lazy"></figure>
+              <p class="card__cat">バナー</p>
+              <h2 class="card__title">AI活用セミナー</h2>
+            </a>
+          </li>
+      </ul>
+
+      <p class="works__more"><a href="../index.html" class="btn btn--back">トップへ戻る</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__logo">mtk.works</p>
+    <p class="footer__copy"><small>&copy; 2026 mtk.works</small></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

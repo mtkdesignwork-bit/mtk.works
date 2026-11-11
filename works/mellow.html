@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>陶芸ブランド「mellow」ランディングページ｜mtk.works</title>
+  <meta name="description" content="栃木・益子の陶芸作家の器を紹介し、オンラインショップへ案内する1ページのサイト。作家さんや小さなブランド向けの制作サンプルとして作りました。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="is-sub">
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header">
+    <a href="../index.html" class="header__logo">mtk.works</a>
+    <button class="header__toggle" type="button" aria-controls="global-nav" aria-expanded="false">
+      <span class="header__toggle-bar"></span>
+      <span class="visually-hidden">メニューを開く</span>
+    </button>
+    <nav class="nav" id="global-nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list">
+        <li><a href="../index.html">TOP</a></li>
+        <li><a href="../index.html#about">ABOUT</a></li>
+        <li><a href="../index.html#strength">STRENGTH</a></li>
+        <li><a href="../works/index.html">WORKS</a></li>
+        <li><a href="../index.html#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="sub">
+    <article class="detail">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol><li><a href="../index.html">TOP</a></li><li><a href="index.html">Works</a></li><li aria-current="page">mellow</li></ol>
+      </nav>
+
+      <header class="detail__head js-fade">
+        <p class="detail__tags"><span>LP</span><span>自主制作（架空の陶芸作家ブランド）</span></p>
+        <h1 class="detail__title">陶芸ブランド「mellow」ランディングページ</h1>
+      </header>
+
+      <div class="detail__images">
+        <figure class="detail__main js-fade"><img src="../images/mock-mellow.jpg" alt="陶芸ブランド mellow ランディングページのファーストビュー。パソコンとスマホの画面" width="1448" height="1086"></figure>
+        <div class="detail__sub js-fade">
+          <img src="../images/work-mellow-scene.jpg" alt="mellow 使う場面のセクション。朝、昼、おやつの器の写真" width="1440" height="900" loading="lazy">
+          <img src="../images/work-mellow-guide.jpg" alt="mellow ご購入の前にのセクション。器のサイズ表とお手入れの案内" width="1440" height="900" loading="lazy">
+        </div>
+      </div>
+
+      <div class="detail__body js-fade">
+        <dl class="work__info">
+          <div><dt>制作区分</dt><dd>自主制作（架空の陶芸作家ブランド）</dd></div>
+          <div><dt>制作概要</dt><dd>栃木・益子の陶芸作家の器を紹介し、オンラインショップへ案内する1ページのサイト。作家さんや小さなブランド向けの制作サンプルとして作りました。</dd></div>
+          <div><dt>制作目的</dt><dd>作品の魅力を伝え、オンラインショップでの購入につなげること。</dd></div>
+          <div><dt>ターゲット</dt><dd>丁寧な暮らしに憧れているものの、毎日は忙しい30〜40代の女性。主にInstagramから訪れ、スマホで見ることを想定しました。</dd></div>
+          <div><dt>担当範囲</dt><dd>要件定義、デザイン、コーディング、公開</dd></div>
+          <div><dt>デザインの意図</dt><dd><p>「今日をまるく、やわらかく。」というコピーに合わせ、ぽってりした器を思わせる丸い形と、ミントやラベンダーの淡い色でやわらかさを表現しました。</p><p>「コンセプト → 使う場面 → 器 → 作家 → こだわり → ご購入の前に → ショップ」という流れで、気になったときに迷わず進めるよう、最初の画面と器の紹介の直後にもショップへのボタンを置いています。お知らせはInstagramへご案内する形です。</p></dd></div>
+          <div><dt>コーディング</dt><dd>PC・スマホ対応（レスポンシブ）。スクロールに合わせて背景の形がふわっと動くアニメーションと、スマホの追従ボタンを実装しました。サンプルのため、ショップ、Instagram、お問い合わせのボタンは表示のみです。</dd></div>
+          <div><dt>使用ツール</dt><dd>HTML / CSS / JavaScript（画像にはAI生成のものを含みます）</dd></div>
+        </dl>
+        <p class="work__link detail__link"><a href="https://mellow-indol.vercel.app/" target="_blank" rel="noopener">サイトを見る</a></p>
+      </div>
+
+      <nav class="pager" aria-label="ほかの作品">
+        <span class="pager__prev is-empty"></span>
+        <a class="pager__list" href="index.html">作品一覧</a>
+        <a class="pager__next" href="quiet-quirk.html"><span>次の作品</span>Quiet Quirk</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__logo">mtk.works</p>
+    <p class="footer__copy"><small>&copy; 2026 mtk.works</small></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

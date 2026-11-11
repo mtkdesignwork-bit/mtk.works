@@ -1,7 +1,8 @@
-// ヘッダー：スクロールしたら背景とロゴを表示
+// ヘッダー：スクロールしたら背景とロゴを表示（FVのない下層ページでは最初から表示）
 (() => {
   const header = document.querySelector('.header');
-  const update = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
+  const hasFv = document.querySelector('.fv') !== null;
+  const update = () => header.classList.toggle('is-scrolled', !hasFv || window.scrollY > 40);
   update();
   window.addEventListener('scroll', update, { passive: true });
 })();
@@ -25,15 +26,34 @@
   });
 })();
 
-// 作品画像をクリックで拡大表示
+// 作品一覧：種類（LP・Webサイト・バナー）で絞り込む
 (() => {
+  const buttons = document.querySelectorAll('.filter__btn');
+  if (!buttons.length) return;
+  const cards = document.querySelectorAll('.cards--list .card');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      cards.forEach((card) => {
+        card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.cat !== filter);
+      });
+    });
+  });
+})();
+
+// 作品詳細：画像をクリックで拡大表示
+(() => {
+  const thumbs = document.querySelectorAll('.detail__main img, .detail__sub img');
+  if (!thumbs.length) return;
   const dialog = document.createElement('dialog');
   dialog.className = 'lightbox';
   dialog.innerHTML = '<div class="lightbox__inner"><img alt=""></div><button class="lightbox__close" type="button" aria-label="閉じる">&times;</button>';
   document.body.appendChild(dialog);
   const img = dialog.querySelector('img');
 
-  document.querySelectorAll('.work__img img').forEach((thumb) => {
+  thumbs.forEach((thumb) => {
     thumb.setAttribute('tabindex', '0');
     const open = () => {
       img.src = thumb.src;

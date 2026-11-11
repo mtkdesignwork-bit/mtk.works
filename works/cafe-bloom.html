@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>カフェ「Café Bloom」ランディングページ｜mtk.works</title>
+  <meta name="description" content="自由が丘のカフェ「Café Bloom」の新規来店客の獲得を想定したランディングページ。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="is-sub">
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header">
+    <a href="../index.html" class="header__logo">mtk.works</a>
+    <button class="header__toggle" type="button" aria-controls="global-nav" aria-expanded="false">
+      <span class="header__toggle-bar"></span>
+      <span class="visually-hidden">メニューを開く</span>
+    </button>
+    <nav class="nav" id="global-nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list">
+        <li><a href="../index.html">TOP</a></li>
+        <li><a href="../index.html#about">ABOUT</a></li>
+        <li><a href="../index.html#strength">STRENGTH</a></li>
+        <li><a href="../works/index.html">WORKS</a></li>
+        <li><a href="../index.html#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="sub">
+    <article class="detail">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol><li><a href="../index.html">TOP</a></li><li><a href="index.html">Works</a></li><li aria-current="page">Café Bloom</li></ol>
+      </nav>
+
+      <header class="detail__head js-fade">
+        <p class="detail__tags"><span>LP</span><span>自主制作（架空案件）</span></p>
+        <h1 class="detail__title">カフェ「Café Bloom」ランディングページ</h1>
+      </header>
+
+      <div class="detail__images">
+        <figure class="detail__main js-fade"><img src="../images/mock-cafe.jpg" alt="カフェ Café Bloom ランディングページのファーストビュー。パソコンとスマホの画面" width="1448" height="1086"></figure>
+        <div class="detail__sub js-fade">
+          <img src="../images/work-cafe-concept.jpg" alt="Café Bloom コンセプトのセクション。店内の写真と紹介文" width="1440" height="900" loading="lazy">
+          <img src="../images/work-cafe-menu.jpg" alt="Café Bloom メニューのセクション。コーヒーとドリンクの写真" width="1440" height="900" loading="lazy">
+        </div>
+      </div>
+
+      <div class="detail__body js-fade">
+        <dl class="work__info">
+          <div><dt>制作区分</dt><dd>自主制作（架空案件）</dd></div>
+          <div><dt>制作概要</dt><dd>自由が丘のカフェ「Café Bloom」の新規来店客の獲得を想定したランディングページ。</dd></div>
+          <div><dt>ターゲット</dt><dd>近隣に住む・働く20〜40代の女性。</dd></div>
+          <div><dt>担当範囲</dt><dd>要件定義、デザイン、コーディング</dd></div>
+          <div><dt>デザインの意図</dt><dd>やわらかなオフホワイトを基調に、店内やメニューの写真をコラージュのように散りばめ、ナチュラルで温かみのある雰囲気を表現しました。</dd></div>
+          <div><dt>コーディング</dt><dd>PC・スマホ対応（レスポンシブ）。ファーストビューの文字が順番に現れるアニメーション、スマホのハンバーガーメニュー、Googleマップの埋め込みを実装しました。</dd></div>
+          <div><dt>使用ツール</dt><dd>HTML / CSS / JavaScript</dd></div>
+        </dl>
+        <p class="work__link detail__link"><a href="https://cafe-bloom-one.vercel.app/" target="_blank" rel="noopener">サイトを見る</a></p>
+      </div>
+
+      <nav class="pager" aria-label="ほかの作品">
+        <a class="pager__prev" href="quiet-quirk.html"><span>前の作品</span>Quiet Quirk</a>
+        <a class="pager__list" href="index.html">作品一覧</a>
+        <a class="pager__next" href="nagi.html"><span>次の作品</span>NAGI（凪）</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__logo">mtk.works</p>
+    <p class="footer__copy"><small>&copy; 2026 mtk.works</small></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
